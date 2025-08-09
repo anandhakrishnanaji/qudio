@@ -11,13 +11,6 @@ GIT
       rubocop (>= 1)
       smart_properties
 
-GIT
-  remote: https://github.com/ffi/ffi.git
-  revision: 1715332d553d53fae13fd9fcbbd9d2c1982a5c2f
-  submodules: true
-  specs:
-    ffi (1.17.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -167,6 +160,7 @@ GEM
       railties (>= 5.0.0)
     faker (2.23.0)
       i18n (>= 1.8.11, < 2)
+    ffi (1.17.1)
     formtastic (5.0.0)
       actionpack (>= 6.0.0)
     formtastic_i18n (0.7.0)
@@ -233,8 +227,6 @@ GEM
     method_source (1.1.0)
     mini_mime (1.1.5)
     minitest (5.25.4)
-    minitest-ci (3.4.0)
-      minitest (>= 5.0.6)
     msgpack (1.8.0)
     mutex_m (0.3.0)
     net-imap (0.5.7)
@@ -446,13 +438,11 @@ DEPENDENCIES
   erb_lint!
   factory_bot_rails
   faker (~> 2.19)
-  ffi!
   honeybadger
   jbuilder (>= 2.7)
   letter_opener
   mail_interceptor
   minitest
-  minitest-ci
   pg
   pry-byebug
   puma

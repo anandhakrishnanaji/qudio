@@ -63,7 +63,7 @@ perl -pi -w -e 's/Wheel/Pump/g;' $(git ls-files)
 - Uses [Sidekiq](https://github.com/mperham/sidekiq).
 - Intercepts all outgoing emails in non production environment using gem
   [mail_interceptor](https://github.com/bigbinary/mail_interceptor).
-- Uses [SemaphoreCI](https://semaphoreci.com/) for continuous testing.
+- Continuous Integration service configuration has been removed.
 - Uses PostgreSQL.
 - Content compression via
   [Rack::Deflater](https://github.com/rack/rack/blob/main/lib/rack/deflater.rb).
@@ -72,12 +72,7 @@ perl -pi -w -e 's/Wheel/Pump/g;' $(git ls-files)
   [prettier](https://github.com/prettier/prettier).
 - Letter opener gem for development.
 
-## NeetoDeploy Review
 
-[NeetoDeploy Review](https://www.neeto.com/neetodeploy) is enabled on this
-application. Thus all PRs will have a review app and once the PR is merged to
-main, it will be deployed to production instance. The neetoDeploy instance for
-Wheel is hosted in `neeto-engineering` organization.
 
 ## About BigBinary
 

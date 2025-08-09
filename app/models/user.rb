@@ -27,6 +27,31 @@ class User < ApplicationRecord
     super new_options
   end
 
+  # Ransack allowlist
+  def self.ransackable_attributes(_auth_object = nil)
+    %w[
+      authentication_token
+      created_at
+      current_sign_in_at
+      current_sign_in_ip
+      email
+      first_name
+      id
+      last_name
+      last_sign_in_at
+      last_sign_in_ip
+      remember_created_at
+      reset_password_sent_at
+      role
+      sign_in_count
+      updated_at
+    ]
+  end
+
+  def self.ransackable_associations(_auth_object = nil)
+    %w[notes]
+  end
+
   private
 
     def send_devise_notification(notification, *args)

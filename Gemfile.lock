@@ -169,9 +169,6 @@ GEM
     has_scope (0.8.2)
       actionpack (>= 5.2)
       activesupport (>= 5.2)
-    honeybadger (5.26.4)
-      logger
-      ostruct
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     inherited_resources (1.14.0)
@@ -256,7 +253,6 @@ GEM
     nokogiri (1.18.8-x86_64-linux-musl)
       racc (~> 1.4)
     orm_adapter (0.5.0)
-    ostruct (0.6.1)
     parallel (1.26.3)
     parser (3.3.7.1)
       ast (~> 2.4.1)
@@ -438,7 +434,6 @@ DEPENDENCIES
   erb_lint!
   factory_bot_rails
   faker (~> 2.19)
-  honeybadger
   jbuilder (>= 2.7)
   letter_opener
   mail_interceptor

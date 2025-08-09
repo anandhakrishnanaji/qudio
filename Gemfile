@@ -27,8 +27,7 @@ gem "jbuilder", ">= 2.7"
 # Authentication
 gem "devise", "~> 4.7"
 
-# Error tracking
-gem "honeybadger"
+# Error tracking removed
 
 # Support cross-browser css compatibility
 gem "autoprefixer-rails"

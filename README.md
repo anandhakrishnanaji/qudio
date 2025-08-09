@@ -57,7 +57,7 @@ perl -pi -w -e 's/Wheel/Pump/g;' $(git ls-files)
 - `rake setup` to set sensible sample data including user `oliver@example.com`
   with password `welcome`.
 - Uses [devise](https://github.com/plataformatec/devise).
-- Uses [Honeybadger](https://www.honeybadger.io/).
+
 - Uses slim for cleaner syntax over erb and better performance over haml.
 - Uses [ActiveAdmin](http://activeadmin.info).
 - Uses [Sidekiq](https://github.com/mperham/sidekiq).

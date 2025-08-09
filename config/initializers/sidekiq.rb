@@ -11,7 +11,7 @@ end
 
 Sidekiq.configure_server do |config|
   config.redis = {
-    url: Rails.application.secrets.redis_url,
+    url: Rails.application.credentials.redis_url,
     size: 9,
     ssl_params: {
       verify_mode: OpenSSL::SSL::VERIFY_NONE
@@ -27,7 +27,7 @@ end
 
 Sidekiq.configure_client do |config|
   config.redis = {
-    url: Rails.application.secrets.redis_url,
+    url: Rails.application.credentials.redis_url,
     size: 1,
     ssl_params: {
       verify_mode: OpenSSL::SSL::VERIFY_NONE

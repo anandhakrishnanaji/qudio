@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-interceptors = Rails.application.secrets.intercept_and_forward_emails_to || ["incoming@example.com"]
+interceptors = Rails.application.credentials.intercept_and_forward_emails_to || ["incoming@example.com"]
 
 options = {
   forward_emails_to: interceptors,

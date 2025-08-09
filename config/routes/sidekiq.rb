@@ -3,7 +3,7 @@
 def secure_compare(string, key)
   ActiveSupport::SecurityUtils.secure_compare(
     ::Digest::SHA256.hexdigest(string),
-    ::Digest::SHA256.hexdigest(Rails.application.secrets.sidekiq[key])
+    ::Digest::SHA256.hexdigest(Rails.application.credentials.dig(:sidekiq, key).to_s)
   )
 end
 
